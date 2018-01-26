@@ -9,13 +9,35 @@ module.exports = {
   tableName: 'users',
   primaryKey: 'id',
   attributes: {
-    id: {type:'number',unique:true,autoIncrement:true},
-    name: {type:'string'}
-
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
+    id: {
+      type:'number',
+      unique:true,
+      autoIncrement:true
+    },
+    name: {
+      type:'string'
+    },
+    email: {
+      type:'string'
+    },
+    password: {
+      type:'string'
+    },
+    profilePicture: {
+      type:'longtext'
+    },
+    location: {
+      type:'string'
+    },
+    createdAt: {
+      type:'number'
+    },
+    updatedAt: {
+      type:'number'
+    }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -26,7 +48,7 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-  },
+  }
 
 };
 

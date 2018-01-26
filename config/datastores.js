@@ -49,9 +49,10 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mysql',
-    url: 'mysql://root:password@localhost:3306/wozawork',
+    // url: 'mysql://root:password@localhost:3306/wozawork',
+    url: 'mysql://root:uyemep91@41.185.93.19:3306/workspace'
 
-  },
+  }
 
 
 };
