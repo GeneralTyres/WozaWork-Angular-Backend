@@ -1,46 +1,40 @@
 /**
- * Users.js
+ * Skills.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
 
 module.exports = {
-  tableName: 'users',
+  tableName: 'skills',
   primaryKey: 'id',
-  autocreatedAt : true,
-  autoupdatedAt : true,
   attributes: {
+
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     id: {
-      type:'number',
-      unique:true,
-      autoIncrement:true
+      type: 'number',
+      unique: true,
+      autoIncrement: true
     },
-    name: {
-      type:'string'
+    userId: {
+      type: 'number'
     },
-    email: {
-      type:'string'
+    classId: {
+      type: 'number'
     },
-    password: {
-      type:'string'
+    title: {
+      type: 'string'
     },
-    profilePicture: {
-      type:'longtext'
-    },
-    location: {
-      type:'string'
+    description: {
+      type: 'string'
     },
     createdAt: {
-      type:'number',
-      autoCreatedAt : true,
+      type:'string'
     },
     updatedAt: {
-      type:'number',
-      autoUpdatedAt : true,
+      type:'string'
     }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -52,7 +46,7 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-  }
+  },
 
 };
 

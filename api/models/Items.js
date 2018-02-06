@@ -1,47 +1,50 @@
 /**
- * Users.js
+ * Items.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
 
 module.exports = {
-  tableName: 'users',
+  tableName: 'items',
   primaryKey: 'id',
   autocreatedAt : true,
   autoupdatedAt : true,
+
   attributes: {
+
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     id: {
-      type:'number',
-      unique:true,
-      autoIncrement:true
+      type: 'number',
+      unique: true,
+      autoIncrement: true
+    },
+    userId: {
+      type: 'number'
+    },
+    skillId: {
+      type: 'number'
     },
     name: {
-      type:'string'
+      type: 'string'
     },
-    email: {
-      type:'string'
+    description: {
+      type: 'string'
     },
-    password: {
-      type:'string'
+    cost: {
+      type: 'number'
     },
-    profilePicture: {
-      type:'longtext'
+    image: {
+      type: 'longtext'
     },
-    location: {
-      type:'string'
-    },
-    createdAt: {
-      type:'number',
-      autoCreatedAt : true,
-    },
-    updatedAt: {
-      type:'number',
-      autoUpdatedAt : true,
-    }
+    // createdAt: {
+    //   type: 'string', columnType: 'datetime'
+    // },
+    // updatedAt: {
+    //   type: 'string', columnType: 'datetime'
+    // }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -52,7 +55,7 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-  }
+  },
 
 };
 
